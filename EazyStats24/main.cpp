@@ -3,6 +3,8 @@
 
 #include "framework/eazystatswindow.hpp"
 
+using namespace framework;
+
 int main(int argc, char* argv[]) {
 	QApplication app(argc, argv);
 

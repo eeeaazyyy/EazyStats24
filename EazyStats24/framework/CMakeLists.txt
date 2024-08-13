@@ -12,8 +12,13 @@ set (CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
-set(HEADERS eazystatswindow.hpp)
-set(SOURCES eazystatswindow.cpp)
+set(HEADERS 
+        eazystatswindow.hpp
+        frameworkwidgets/windowtabwidget/windowtabwidget.hpp)
+
+set(SOURCES 
+        eazystatswindow.cpp
+        frameworkwidgets/windowtabwidget/windowtabwidget.cpp)
 
 add_library(${APP_NAME} SHARED ${SOURCES} ${HEADERS})
 
